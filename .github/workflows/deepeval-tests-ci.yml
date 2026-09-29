@@ -18,6 +18,9 @@ on:
 env:
   OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
   OLLAMA_BASE_URL: ${{ secrets.OLLAMA_BASE_URL }}
+  OLLAMA_MODEL_SENTIMENT: gemma4:31b
+  OLLAMA_MODEL_SUMMARIZE: gemma4:31b
+  OLLAMA_MODEL_INTENT: gemma4:31b
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
 jobs:
