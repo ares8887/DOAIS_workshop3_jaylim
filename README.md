@@ -1,7 +1,5 @@
 # DOAIS Workshop 3 – LLMSecOps (llmapp09)
 
-End-to-end LLMOps pipeline: FastAPI multi-route LLM backend (`llm-multiroute`), Flask frontend (`llm-frontend-python`), Docker, Kubernetes, and GitHub Actions CI (lint, unit tests, Trivy scan, Docker Hub push, PromptFoo and DeepEval evals).
-
 ## Changes made to the course code
 
 | Change | Why |
@@ -17,7 +15,7 @@ Application logic and unit tests are unchanged.
 
 ## Secrets
 
-No keys are committed. Set these as GitHub Actions repository secrets: `DOCKERHUB_TOKEN`, `OLLAMA_API_KEY`, `OLLAMA_BASE_URL`, `OPENAI_API_KEY`. For local runs, copy `llm-multiroute/.env.example` to `.env` (git-ignored).
+No keys are committed. These were set as GitHub Actions repository secrets: `DOCKERHUB_TOKEN`, `OLLAMA_API_KEY`, `OLLAMA_BASE_URL`, `OPENAI_API_KEY`. Locally, keys go in `llm-multiroute/.env` (git-ignored), created from `.env.example`.
 
 ## CI status
 
