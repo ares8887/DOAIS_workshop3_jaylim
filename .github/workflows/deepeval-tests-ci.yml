@@ -73,6 +73,11 @@ jobs:
         working-directory: deepeval-tests
         run: deepeval test run test_intent.py -v
 
+      - name: Show backend logs on failure
+        if: failure()
+        run: docker compose logs llm-multiroute --tail 80
+        working-directory: .
+
       - name: Tear down backend
         if: always()
         run: docker compose down
